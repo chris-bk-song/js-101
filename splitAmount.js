@@ -1,15 +1,15 @@
 function splitAmount (bill, service, people) {
-  if (service == 'good') {
+  if (service === 'good') {
     split = (bill + (bill * 0.20))/ Number(people);
-    return(split);
+    return('The split amount for ' + people + ' people is $ ' + split);
   }
-  else if (service == 'fair') {
+  else if (service === 'fair') {
     split = (bill + (bill * 0.15))/ Number(people);
-    return(split);
+    return('The split amount for ' + people + ' people is $ ' + split);
   }
-  else if (service == 'bad') {
+  else if (service === 'bad') {
     split = (bill + (bill * 0.10))/ Number(people);
-    return(split);
+    return('The split amount for ' + people + ' people is $ ' + split);
   }
 }
 
