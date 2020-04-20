@@ -1,15 +1,15 @@
 function tipAmount (bill, service) {
   if (service == 'good') {
     tip = bill * 0.20;
-    return(tip);
+    return('The tip amount for good service is $ ' + tip);
   }
   else if (service == 'fair') {
     tip = bill * 0.15;
-    return(tip);
+    return('The tip amount for fair service is $ ' + tip);
   }
   else if (service == 'bad') {
     tip = bill * 0.10;
-    return(tip);
+    return('The total amount for bad service is $ ' +_tip);
   }
 }
 
