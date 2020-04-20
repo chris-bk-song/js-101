@@ -1,15 +1,15 @@
 function totalAmount (bill, service) {
   if (service == 'good') {
     total = bill + (bill * 0.20);
-    return(total);
+    return('The total amount including tip is $ ' + total);
   }
-  else if (service == 'fair') {
+  else if (service === 'fair') {
     total = bill + (bill * 0.15);
-    return(total);
+    return('The total amount including tip is $ ' + total);
   }
-  else if (service == 'bad') {
+  else if (service === 'bad') {
     total = bill + (bill * 0.10);
-    return(total);
+    return('The total amount including tip is $ ' + total);
   }
 }
 
